@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<meta charset="UTF-8">
+
+<head>
+    <title>COMP125 Assignment #4</title>
+    <link href="assignment4.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="topPage">
+        <img id="sideHeart" src=images/sideheart.png>
+        <h1>Mimitoss Dating Service</h1>
+        <p>Please create your account below to start finding the one <br/>who hypnotizes you!<br/> A match is guaranteed once you let us find love!</p>
+    </div>
+    <div id="allPage">
+        <form id="myForm">
+            <div id="personalInfo">
+                <p>Personal Information</p>
+                <label class="label">First Name:</label>
+                <input id="fName" tabindex="1" type="text" placeholder="John" required><br/><br/>
+                <label class="label">Last Name:</label>
+                <input id="lName" tabindex="3" type="text" placeholder="Doe" required><br/><br/>
+                <label class="label">Address:</label>
+                <input id="address" tabindex="5" placeholder="1234 Water Street" required><br/><br/>
+                <label class="label">Suite/Apt. #:</label>
+                <input tabindex="6"><br/><br/><br/>
+                <label class="label">City:</label>
+                <input id="city" tabindex="7" type="text" placeholder="Toronto" required><br/><br/>
+                <label class="label">Postal Code:</label>
+                <input id="postalCode" tabindex="9" placeholder="A0A 0A0" required><br/><br/>
+                <label class="label">Province:</label>
+                <select id="provinces" name="provinces" size="1" required>
+                        <option disables selected value tabindex "11"> -- Select an option -- </option>
+                        <option value="AB">Alberta (AB)</option>
+                        <option value="BC">British Columbia (BC)</option>
+                        <option value="MN">Manitoba (MN)</option>
+                        <option value="ON">Ontario (ON)</option>
+                        <option value="QC">Québec (QC)</option>
+                        <option value="SK">Saskatchewan (SK)</option>
+                        </select><br/><br/><br/>
+                <label class="label">Age:</label>
+                <input id="age" tabindex="13" type="number" placeholder="23" required><br/><br/>
+            </div>
+            <div id="accountInfo">
+                <p>Account Information</p>
+                <label class="label">Email:</label>
+                <input id="email" tabindex="15" type="email" placeholder="john.doe@email.com" required><br/><br/>
+                <label class="label">Password:</label>
+                <input id="password" tabindex="17" type="password" placeholder="**********" required><br/><br/>
+                <label class="label">Confirm Password:</label>
+                <input id="confirmPassword" tabindex="19" type="password" placeholder="**********" required><br/><br/>
+            </div>
+            <div id="buttons">
+                <button id="submitButton" tabindex="21" type="submit" onclick="submitForm()">Create Account</button>
+                <button id="resetButton" tabindex="23" type="Reset" value="Reset" onclick="resetForm()">Reset Fields</button>
+            </div>
+        </form>
+    </div>
+    <div id="bottomPage">
+        <img id="roses" src=images/roses.png>
+        <h6>Love not guaranteed.</h6>
+        <p>&copy; Copyright Information: Ryan Watson, 300920674, 2017</p>
+    </div>
+</body>
+<script src="assignment4.js"></script>
+
+</html>

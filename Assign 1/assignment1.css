@@ -1,0 +1,54 @@
+#allPage {
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: dodgerblue;
+}
+
+#topPage {
+    text-align: center;
+}
+
+.label {
+    width: 150px;
+    float: left;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.boxLabel {
+    margin-left: 10px;
+    width: 50px;
+    float: left;
+    text-align: right;
+}
+
+#resultBox {
+    width: 100px;
+}
+
+#calc {
+    float: left;
+    margin-left: 100px;
+}
+
+#reset {
+    float: right;
+    margin-right: 100px;
+}
+
+#imperial {
+    display: block;
+}
+
+#metric {
+    display: none;
+}
+
+#imperialButton {
+    display: block;
+}
+
+#metricButton {
+    display: none;
+}

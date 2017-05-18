@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+
+<!-- #BeginTemplate "dwt/finaltemplate.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<!-- #BeginEditable "Title" -->
+<title>Contact Us</title>
+<!-- #EndEditable -->
+<meta content="COMP213, Final project, Centennial College" name="keywords">
+<meta content="Template for final project" name="description">
+<link href="finalStyles.css" rel="stylesheet" type="text/css">
+<link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="w3css.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="height: 198px">
+<div id="allPage" style="left: 0px; top: 0px; height: 199px">
+<div id="banner"><p id="title">Watson's Real Estate</p>
+<p id="rossInfo"><br><a href="tel:555-555-5555"><b id="contactInfo">Office:</b> 647-541-3264</a>
+<br><a href="tel:555-555-5555"><b id="contactInfo">Ross' Cell:</b> 647-925-5564</a>
+<br><a href="mailto:ross@WRE.com"><b id="contactInfo">Ross' Email:</b> ross@WRE.com</a>
+<br><a href="https://goo.gl/maps/KYUd17ELhYz" target="_blank">654 Progress Avenue, Toronto, Ontario</a></p></div>
+<div id="buttons" style="height: 41px"><p id="nav"><a href="home.html"><button class="btn">Home</button></a>
+	<a href="properties.html"><button class="btn">Properties</button></a>
+	<a href="contactus.html"><button class="btn">Contact Us</button></a>
+	<a href="sitemap.html"><button class="btn">Site Map</button></a></p></div>
+<div id="content" style= "height: 1025px">
+<!-- #BeginEditable "Content" -->
+	<p class="contacttop"><strong><br>Weren't able to find your dream house in the listings? Fill out the form below and Ross will be sure to get you in the house of your dreams!</strong></p>
+	<form action="mailto:jdoe37@my.centennialcollege.ca" method="post">
+	<fieldset>
+	<legend>Contact Us!</legend>
+	
+	<p><label>First Name:</label><input name="txtFirst" type="text" required="required" size="25" tabindex="1"></p>
+	<p><label>Last Name:</label><input name="txtLast" type="text" required="required" size="25" tabindex="3"></p>
+	<p><label>Email:</label><input name="txtEmail" type="email" required="required" size="35" tabindex="5" value="youremailhere@hotmail.com"></p>
+	<p><label>Phone Number:</label><input name="number" required="required" size="15" tabindex="7" value="(555)-555-5555"></p>
+	<p><label>Type of Property:</label><select name="property" multiple="multiple" size="3" tabindex="9">
+	<option>House</option>
+	<option>Town House</option>
+	<option>Condominium</option>
+	</select></p>
+	<p><label>Bedrooms:</label> 
+	<select name="Bedrooms" multiple="multiple" size="7" tabindex="11">
+	<option>1</option>
+	<option>1 + Den</option>
+	<option>2</option>
+	<option>2 + Den</option>
+	<option>3</option>
+	<option>4</option>
+	<option>5</option>
+	</select></p>
+	<p><label>Bathrooms:</label> 
+	<select name="bathrooms" multiple="multiple" size="6" tabindex="13">
+	<option>1</option>
+	<option>1.5</option>
+	<option>2</option>
+	<option>2.5</option>
+	<option>3</option>
+	<option>4</option>
+	</select></p>
+	<p><label>Minimum Price: </label>
+	<input name="minPrice" size="20" tabindex="15" type="text" value="$"></p>
+	<p><label>Maximum Price: </label>
+	<input name="maxPrice" size="20" tabindex="17" type="text" value="$"></p>
+	<p><label>Anything else?</label>
+	<textarea cols="50" name="comments" rows="10" tabindex="19">-- Please let us know of any extra features, locations, or anything else you're looking for in your future home! --</textarea></p>
+	<p id="contactButtons"><input name="submit" tabindex="21" type="submit" value="Send!">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input name="reset" tabindex="23" type="reset" value="Reset your information"></p>
+	</fieldset>
+	</form>
+<!-- #EndEditable -->
+</div>
+<div id="footer"><p id="nav"><a href="home.html"><button class="btn">Home</button></a>
+	<a href="properties.html"><button class="btn">Properties</button></a>
+	<a href="contactus.html"><button class="btn">Contact Us</button></a>
+	<a href="sitemap.html"><button class="btn">Site Map</button></a></p></div>
+</div>
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<meta charset="UTF-8">
+
+<head>
+    <title>COMP125 Assignment #1</title>
+    <link href="assignment1.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="allPage">
+        <form onsubmit="return false;">
+            <fieldset>
+                <div id="topPage">
+                    <h1>Basal Metabolic Rate (BMR) Calculator</h1>
+                    <h3>Please select a calculator type below:</h3>
+
+                    <button onclick="met()">Use Metric BMR Calculator</button>
+                    <button onclick="imp()">Use Imperial BMR Calculator</button><br/><br/>
+                    <label class="label">Sex Chromosomes:</label>
+                    <select class="boxLabel" id="sex" name="boxSex" tabindex="1">
+                      <option value="XY">XY</option>
+                      <option value="XX">XX</option> 
+                    </select>
+
+                    <label class="label">Age:</label>
+                    <input class="boxLabel" id="age" name="age" type="number" tabindex="3" min="0" />
+
+                    <br/><br/>
+                </div>
+                <div id="imperial">
+
+                    <label class="label"><b>Your Height</b></label><br/>
+                    <label class="label">Feet:</label>
+                    <input class="boxLabel" id="feet" name="feet" type="number" tabindex="5" min="0" />
+
+                    <label class="label">Inches:</label>
+                    <input class="boxLabel" id="inches" name="inches" type="number" tabindex="7" min="0" max="11" />
+
+                    <br/><br/>
+
+                    <label class="label"><b>Your Weight</b></label><br/>
+                    <label class="label">Stone:</label>
+                    <input class="boxLabel" id="stone" name="stone" type="number" tabindex="9" min="0" />
+
+                    <label class="label">Pounds:</label>
+                    <input class="boxLabel" id="pounds" name="pounds" type="number" tabindex="11" min="0" />
+                </div>
+
+                <div id="metric">
+                    <label class="label"><b>Your Height</b></label><br/>
+                    <label class="label">Centimetres:</label>
+                    <input class="boxLabel" id="cm" name="cm" type="number" tabindex="5" min="0" />
+
+                    <br/><br/>
+
+                    <label class="label"><b>Your Weight</b></label><br/>
+                    <label class="label">Kilograms</label>
+                    <input class="boxLabel" id="kg" name="kg" type="number" tabindex="9" min="0" />
+
+                </div>
+                <br/><br/>
+
+                <div id="allActivity">
+                    <h3>Select your activity level:</h3>
+                    <input id="activity" name="activityLevel" type="radio" tabindex="13" value="sedentary" checked="checked" />
+                    <label>I am sedentary (little or no exercise)</label><br/>
+                    <input id="activity" name="activityLevel" type="radio" tabindex="15" value="light" />
+                    <label>I am lightly active (light exercise or sports 1-3 days per week)</label><br/>
+                    <input id="activity" name="activityLevel" type="radio" tabindex="17" value="moderate" />
+                    <label>I am moderately active (moderate exercise or sports 3-5 days per week)</label><br/>
+                    <input id="activity" name="activityLevel" type="radio" tabindex="19" value="very" />
+                    <label>I am very active (hard exercise or sports 6-7 days per week)</label><br/>
+                    <input id="activity" name="activityLevel" type="radio" tabindex="21" value="super" />
+                    <label>I am super active (very hard exercise or sports and a physical job or 2x training)</label><br/><br/>
+                </div>
+
+                <div id="imperialButton">
+                    <button id="calc" tabindex="23" onclick="calcBMRImp()">Calculate BMR!</button>
+                </div>
+
+                <div id="metricButton">
+                    <button id="calc" tabindex="23" onclick="calcBMRMetric()">Calculate BMR!</button>
+                </div>
+
+                <button id="reset" tabindex="25" type="Reset" value="Reset">Reset Form!</button><br/><br/>
+
+                <p>Your daily caloric intake to maintain your current body weight is:
+                    <input type="text" id="resultBox" name="result" readonly="readonly"></p>
+
+            </fieldset>
+        </form>
+    </div>
+
+    <script src="assignment1.js"></script>
+
+</body>
+
+</html>
